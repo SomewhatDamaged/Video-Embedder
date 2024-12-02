@@ -1,3 +1,5 @@
+Factored as a Cloudflare Python Worker.
+
 Responds to a given video URL such that Discord/et;al can embed it.
 
 Output is (depending on endpoint; you can force a video mime type):
