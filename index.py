@@ -38,7 +38,7 @@ def add_content_type(input: str, content_type: str) -> str:
 def format_HTML(input: str, url: str) -> str:
     return input.format(url=url, domain=DOMAIN, path=PATH)
 
-def on_fetch(request):
+def on_fetch(request) -> Response:
     target_url: str = request.url.split("=", 1)[1].replace("\"", "&quot;")
     path_url: str = request.url.split("?", 1)[0]
     if "oembed" in path_url:
@@ -61,7 +61,7 @@ def do_oembed(url: str) -> Response:
     })
     return Response.new(data, headers=headers)
 
-def do_opengraph(url, path_url):
+def do_opengraph(url, path_url) -> Response:
     format = path_url.rsplit("/", 1)[1]
     if format != "video":
         html = add_content_type(OPENGRAPH, format)
