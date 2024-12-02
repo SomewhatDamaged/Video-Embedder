@@ -6,7 +6,7 @@ PATREON_DETAILS = {
     "url": "https://www.patreon.com/SourceBot"
 }
 
-DOMAIN = "http://cool-snow-b930.damaged-701.workers.dev"
+DOMAIN = "http://excessive.space"
 
 PATH = "/video"
 
