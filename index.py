@@ -1,5 +1,4 @@
 from js import Response, Headers
-import json
 
 PATREON_DETAILS = {
     "name": "SourceBot",
@@ -49,16 +48,7 @@ def on_fetch(request) -> Response:
 
 def do_oembed(url: str) -> Response:
     headers = Headers.new({"content-type": "application/json"}.items())
-    data = json.dumps({
-        "version": "1.0",
-        "type": "rich",
-        "title": " ",
-        "author_name": "Video Link",
-        "author_url": url,
-        "provider_name": PATREON_DETAILS["name"],
-        "provider_url": PATREON_DETAILS["url"],
-        "url": url
-    })
+    data = f"{{\"version\":1.0,\"type\":\"rich\",\"title\":\" \",\"author_name\":\"Video Link\",\"author_url\":\"{url}\",\"provider_name\":\"{PATREON_DETAILS['name']}\",\"provider_url\":\"{PATREON_DETAILS['url']}\",\"url\":\"{url}\"}}"
     return Response.new(data, headers=headers)
 
 def do_opengraph(url, path_url) -> Response:
