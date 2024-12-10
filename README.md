@@ -11,7 +11,6 @@ https://excessive.space/video/mp4?url=https://bsky.social/xrpc/com.atproto.sync.
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0;URL=https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba">
 <meta property="og:type" content="video.other">
 <title></title>
 <meta property="og:url" content="https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba">
@@ -23,7 +22,7 @@ https://excessive.space/video/mp4?url=https://bsky.social/xrpc/com.atproto.sync.
 <link rel="alternate" type="application/json+oembed" href="http://excessive.space/video/oembed.json?url=https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba" title="Damaged">
 <meta property="og:video:type" content="video/mp4">
 </head>
-<body>
+<body onload="window.location = 'https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba'">
 <p>Redirecting you to <a href="https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba">https://bsky.social/xrpc/com.atproto.sync.getBlob?did=did:plc:7uczurhtoruazft4367p2yi7&cid=bafkreidg4h5qdeu4vpptbkb6tz3ft6wnar27ziwnx3skk6bwtkhkpejcba</a>. If you are not redirected in a few seconds, please click the link.</p>
 <p>Served From Cloudflare</p>
 </body>
