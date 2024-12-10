@@ -13,7 +13,6 @@ OPENGRAPH = """<!DOCTYPE html>
 <html>
 <head>
 <meta charset=\"utf-8\">
-<meta http-equiv="refresh" content="0;URL={url}">
 <meta property=\"og:type\" content=\"video.other\">
 <title></title>
 <meta property="og:url" content="{url}">
@@ -24,7 +23,7 @@ OPENGRAPH = """<!DOCTYPE html>
 <meta property="og:description" content=" ">
 <link rel="alternate" type="application/json+oembed" href="{domain}{path}/oembed.json?url={url}" title="Damaged">
 </head>
-<body>
+<body onload="window.location = '{url}'">
 <p>Redirecting you to <a href="{url}">{url}</a>. If you are not redirected in a few seconds, please click the link.</p>
 </body>
 </html>
