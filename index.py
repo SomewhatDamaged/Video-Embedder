@@ -1,4 +1,5 @@
 from js import Response, Headers
+from urllib import parse
 
 PATREON_DETAILS = {
     "name": "SourceBot",
@@ -40,9 +41,9 @@ def on_fetch(request) -> Response:
     target_url: str = request.url.split("=", 1)[1].replace("\"", "&quot;")
     path_url: str = request.url.split("?", 1)[0]
     if "oembed" in path_url:
-        data: Response = do_oembed(target_url)
+        data: Response = do_oembed(parse.unquote(target_url, encoding='utf-8', errors='replace'))
     else:
-        data: Response = do_opengraph(target_url, path_url)
+        data: Response = do_opengraph(parse.unquote(target_url), encoding='utf-8', errors='replace'), parse.unquote(path_url), encoding='utf-8', errors='replace'))
     return data
 
 def do_oembed(url: str) -> Response:
